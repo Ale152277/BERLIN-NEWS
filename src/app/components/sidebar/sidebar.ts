@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './sidebar.css'
 })
 export class Sidebar {
-
+ links = [
+    { name: 'Inicio', url: '/' },
+    { name: 'Sobre nosotros', url: '/us' },
+    { name: 'Noticias', url: '/news' },
+  
+  ];
 }

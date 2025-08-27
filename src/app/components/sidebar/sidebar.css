@@ -1,0 +1,36 @@
+.sidebar {
+  position: fixed; /* fijo al costado */
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 20px;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.2);
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 12px 0;
+}
+
+.sidebar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar a:hover {
+  color: #f1c40f;
+}

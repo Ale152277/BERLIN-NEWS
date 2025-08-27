@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NewsList } from './components/news-list/news-list';
+import { Header } from './components/header/header';
+import { Sidebar } from './components/sidebar/sidebar';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [NewsList, Header, Sidebar],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

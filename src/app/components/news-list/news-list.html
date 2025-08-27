@@ -1,1 +1,11 @@
-<p>news-list works!</p>
+<div class="news-list">
+  @for (item of news; track $index) {
+    <div class="card">
+      <img [src]="item.image" [alt]="item.title" class="card-image" />
+      <div class="card-body">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.content }}</p>
+      </div>
+    </div>
+  }
+</div>
