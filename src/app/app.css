@@ -1,0 +1,27 @@
+.main-layout {
+  display: flex;
+  gap: 50px;
+  padding: 20px 90px;
+  background-color: #5b3def15;
+}
+
+/* Izquierda (contenido principal) */
+.left-column {
+  flex: 3;
+}
+
+/* Derecha (columna de noticias) */
+.right-column {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column; /* Se apila en una columna */
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+  .right-column {
+    display: none; /* Oculta las noticias derecha */
+  }
+}

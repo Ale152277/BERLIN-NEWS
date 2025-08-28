@@ -1,0 +1,29 @@
+<div class="news-column">
+  <div class="col">
+    <div class="header-news-column">
+        <p>Últimas noticias</p>
+    </div>
+    @for (item of newsColumn; track $index) {
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <!-- Imagen como fondo -->
+          <div 
+            class="imagen col-md-4"
+            style="background-image: url('{{ item.image }}');">
+          </div>
+
+          <!-- Texto a la derecha -->
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ item.title }}</h5>
+              <p class="card-text">{{ item.content }}</p>
+              <p class="card-text">
+                <small class="text-body-secondary">Última actualización: {{ item.date }}</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>
