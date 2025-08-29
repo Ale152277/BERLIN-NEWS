@@ -1,33 +1,18 @@
-.navbar-first {
-  background-color: black;
-}
-
-.navbar-first img {
-  max-height: 100px;
-}
-.navbar-first .navbar-toggler {
-  color-scheme: light;
-  background-color: #fed592;
-}
-.navbar-second {
+.navbar-purple {
   background-color: #5c3def;
 }
-.navbar-nav a{
-  color: white; 
-  font-size: 16px;
-}
-.navbar-nav .nav-link.active {
-  color: #fed592 !important; 
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #fed592;
   font-weight: bold;
 }
-.navbar-nav a:hover, .navbar-nav a:focus  {
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-}
+
+/* color de la Hamburguesa desplegable */
 .offcanvas-end {
   background-color: #5c3def;
 }
-.offcanvas-header H5{
+
+.offcanvas-header h5 {
   color: white;
 }

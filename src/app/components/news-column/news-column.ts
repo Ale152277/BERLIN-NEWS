@@ -7,24 +7,24 @@ import { Component } from '@angular/core';
   styleUrl: './news-column.css'
 })
 export class NewsColumn {
-    newsColumn = [
-    { 
-      title: 'Noticia 1', 
-      content: 'Contenido de la noticia 1',
-      image: 'https://inaturalist-open-data.s3.amazonaws.com/photos/129658776/original.jpg',
-      date:'Hace 30 minutos'
+  newsColumn = [
+    {
+      title: 'Soluciones Web ...',
+      content: 'Berlín completó su segunda exposición.',
+      image: 'https://i.pinimg.com/736x/e7/c3/0a/e7c30a496f139a660a223cdf9f8e4489.jpg',
+      date: 'Hace 30 minutos'
     },
-    { 
-      title: 'Noticia 2', 
-      content: 'Contenido de la noticia 2',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx89qOf4VJue2m66yRi50RoFcgDvjbeC-WXcjA_s_CRPFZiiWepmasfFKjZmpFRCtg_LM&usqp=CAU',
-      date:'Hace 1 hora'
+    {
+      title: 'Machine Learning',
+      content: 'Cruce de horario dejó al grupo fuera de juego.',
+      image: 'https://i.pinimg.com/1200x/2c/55/93/2c55935429db0106566d198c4d7a9f52.jpg',
+      date: 'Hace 1 hora'
     },
-    { 
-      title: 'Noticia 3', 
-      content: 'Contenido de la noticia 3',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT4hXyCDoCmz9UgyAdP0wxp7QPag2UdoRXqg&s',
-      date:'Hace 1 hora'
-    },
+    {
+      title: 'Inicio de Proyecto',
+      content: 'Nuevo Proyecto: ¿Qué será?',
+      image: 'https://i.pinimg.com/1200x/77/64/82/776482237f287021ea2c72689fa59a18.jpg',
+      date: 'Hace 2 horas'
+    }
   ];
 }

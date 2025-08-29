@@ -7,21 +7,21 @@ import { Component } from '@angular/core';
   styleUrl: './news-list.css'
 })
 export class NewsList {
-   news = [
-    { 
-      title: 'Noticia 1', 
-      content: 'Contenido de la noticia 1',
-      image: 'https://inaturalist-open-data.s3.amazonaws.com/photos/129658776/original.jpg'
+  news = [
+    {
+      title: 'Berlín arranca el 2025',
+      content: 'Con café, trabajos en grupo y mucha fe en que esta vez no habrá tanto estrés.',
+      image: 'https://i.pinimg.com/1200x/3a/48/55/3a485576f4790764f776f7edf90fa0c5.jpg'
     },
-    { 
-      title: 'Noticia 2', 
-      content: 'Contenido de la noticia 2',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx89qOf4VJue2m66yRi50RoFcgDvjbeC-WXcjA_s_CRPFZiiWepmasfFKjZmpFRCtg_LM&usqp=CAU'
+    {
+      title: 'Nuevo Integrante en Berlín',
+      content: 'El nuevo integrante promete esfuerzo: listo para trabajos y largas madrugadas.',
+      image: 'https://i.pinimg.com/1200x/27/69/8d/27698d16ddecb32750443ea7bdd73477.jpg'
     },
-    { 
-      title: 'Noticia 3', 
-      content: 'Contenido de la noticia 3',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT4hXyCDoCmz9UgyAdP0wxp7QPag2UdoRXqg&s'
+    {
+      title: '¿Berlín se separa? - Inicio ciclo 2025-2',
+      content: 'El grupo sufrió bajas estratégicas: la guerra contra el sistema de matrícula continúa.',
+      image: 'https://i.pinimg.com/736x/72/25/37/722537c9b8ee837148dd36b44b85a41e.jpg'
     },
   ];
 }

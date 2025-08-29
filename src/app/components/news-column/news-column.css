@@ -8,24 +8,20 @@
   margin-bottom: 15px;
 }
 
-.imagen {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100px;
-}
 .card {
-  border: #b08bab 1px solid;
-  border-radius: 1%;
+  border: 1px solid #b08bab;
   box-shadow: 2px 2px 5px #b08bab;
+}
+.card img {
+  height: 150px;
+  object-fit: cover;
 }
 
 .card-body h5 {
-  font-size: 18px;
   font-weight: bold;
   color: #3621a3;
 }
 .card-body small {
-  color: gray;
+  color: rgb(128, 128, 128);
   font-style: italic;
 }
