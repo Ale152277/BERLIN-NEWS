@@ -1,9 +1,33 @@
-.header {
-  background-color: #1e3a8a; /* azul oscuro */
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  font-size: 1.5rem;
+.navbar-first {
+  background-color: black;
+}
+
+.navbar-first img {
+  max-height: 100px;
+}
+.navbar-first .navbar-toggler {
+  color-scheme: light;
+  background-color: #fed592;
+}
+.navbar-second {
+  background-color: #5c3def;
+}
+.navbar-nav a{
+  color: white; 
+  font-size: 16px;
+}
+.navbar-nav .nav-link.active {
+  color: #fed592 !important; 
   font-weight: bold;
+}
+.navbar-nav a:hover, .navbar-nav a:focus  {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+.offcanvas-end {
+  background-color: #5c3def;
+}
+.offcanvas-header H5{
+  color: white;
 }
