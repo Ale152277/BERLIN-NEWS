@@ -13,6 +13,7 @@
   box-shadow: 2px 2px 5px #b08bab;
 }
 .card img {
+  width: 100%;
   height: 150px;
   object-fit: cover;
 }
@@ -24,4 +25,13 @@
 .card-body small {
   color: rgb(128, 128, 128);
   font-style: italic;
+}
+.card-instagram{
+  background-color: #FED592;
+  margin-top: 50px;
+}
+.card-title{
+  color: #4B30CC;
+  font-family:Impact;
+  letter-spacing: 1px;
 }

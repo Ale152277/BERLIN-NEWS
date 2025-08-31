@@ -25,6 +25,12 @@ export class NewsColumn {
       content: 'Nuevo Proyecto: ¿Qué será?',
       image: 'https://i.pinimg.com/1200x/77/64/82/776482237f287021ea2c72689fa59a18.jpg',
       date: 'Hace 2 horas'
+    },
+    {
+      title: 'Duda existencial',
+      content: 'Grupo acabó el curso de robótica y no sabe qué hacer con los materiales',
+      image: 'https://i.pinimg.com/1200x/32/ae/2f/32ae2ffe0dd1e3d3a6f97c09e5eaaf0e.jpg',
+      date: 'Hace 2 semanas'
     }
   ];
 }
