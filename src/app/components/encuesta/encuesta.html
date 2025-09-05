@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row g-5 mb-3">
+    @for (item of cursos; track $index){
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <app-curso
+        [nombre]="item.nombre"
+        [votos]="item.votos"
+        [imagen]="item.imagen"
+        (voto)="sumarVoto($event)"
+        [esGanador]="item.nombre === cursoGanador()"
+      >
+      </app-curso>
+    </div>
+    }
+  </div>
+  @if (totalVotos() ===0){
+  <p class="fw-semibold fst-italic">
+    Nadie ha votado aún jeje, esta es tu oportunidad para votar por el curso que
+    más te deja dormir
+  </p>
+  } @else{
+  <p class="fw-semibold">Total de votos: {{ totalVotos() }}</p>
+  }
+</div>
