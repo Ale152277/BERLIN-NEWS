@@ -47,6 +47,14 @@ export class Encuesta {
   }
   cursoGanador() {
     const maxVotos = Math.max(...this.cursos.map((c) => c.votos));
-    return this.cursos.find((c) => c.votos === maxVotos)?.nombre;
+    const empatados = this.cursos.filter((c) => c.votos === maxVotos);
+
+    return empatados.length === 1 ? empatados[0].nombre : null;
+  }
+
+  cursoEmpatado() {
+    const maxVotos = Math.max(...this.cursos.map((c) => c.votos));
+    const empatado = this.cursos.filter((c) => c.votos === maxVotos);
+    return empatado.length > 1 ? empatado.map((c) => c.nombre) : [];
   }
 }

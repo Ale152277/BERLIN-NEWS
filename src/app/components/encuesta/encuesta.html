@@ -8,6 +8,8 @@
         [imagen]="item.imagen"
         (voto)="sumarVoto($event)"
         [esGanador]="item.nombre === cursoGanador()"
+        [estaEmpatado]="cursoEmpatado().includes(item.nombre)"
+
       >
       </app-curso>
     </div>

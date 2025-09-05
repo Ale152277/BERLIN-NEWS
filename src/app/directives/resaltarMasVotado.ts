@@ -1,21 +1,20 @@
-import { Directive, ElementRef, input, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, input, Renderer2, OnChanges } from '@angular/core';
 
 @Directive({
   selector: '[appResaltarMasVotado]',
 })
-export class ResaltarMasVotado {
+export class ResaltarMasVotado implements OnChanges {
   esGanador = input<boolean>(false, { alias: 'appResaltarMasVotado' });
+estaEmpatado = input<boolean>(false);
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
   ngOnChanges() {
-    if (this.esGanador()) {
-      this.renderer.setStyle(
-        this.el.nativeElement,
-        'background-color', '#2cff7b'
-      );
-     
-    } else {
-      this.renderer.removeStyle(this.el.nativeElement, 'background-color');
-    }
+  if (this.estaEmpatado()) {
+    this.el.nativeElement.style.backgroundColor = 'yellow';
+  } else if (this.esGanador()) {
+    this.el.nativeElement.style.backgroundColor = 'lightgreen';
+  } else {
+    this.el.nativeElement.style.backgroundColor = '';
   }
+}
 }

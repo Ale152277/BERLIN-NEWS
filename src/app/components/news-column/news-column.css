@@ -35,3 +35,9 @@
   font-family:Impact;
   letter-spacing: 1px;
 }
+
+.destacada{
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 10px #ff0000;
+
+} 

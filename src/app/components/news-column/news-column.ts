@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { NgClass } from '@angular/common';
+import { FavoritosService } from '../../services/favoritos.service';
 
 @Component({
   selector: 'app-news-column',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './news-column.html',
   styleUrl: './news-column.css'
 })
@@ -31,6 +33,17 @@ export class NewsColumn {
       content: 'Grupo acabó el curso de robótica y no sabe qué hacer con los materiales',
       image: 'https://i.pinimg.com/1200x/32/ae/2f/32ae2ffe0dd1e3d3a6f97c09e5eaaf0e.jpg',
       date: 'Hace 2 semanas'
-    }
+    },
+    {
+      title: 'Entrega de Proyecto ...',
+      content: 'El plazo minimo de entrega de proyecto de calidad es para antes de la semana 7.',
+      image: 'https://i.pinimg.com/736x/48/a2/b6/48a2b652e215c4bfe95f0a6839313240.jpg',
+      date: 'Hace 10 minutos'
+    },
   ];
+  constructor(private favoritosService: FavoritosService) {}
+
+  get favoritos() {
+    return this.favoritosService.obtenerFavoritos();
+  }
 }

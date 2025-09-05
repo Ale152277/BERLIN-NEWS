@@ -3,8 +3,13 @@
     <div class="header-news-column">
       <p>Últimas noticias</p>
     </div>
+
     @for (item of newsColumn; track $index) {
-    <div class="card mb-3 w-100">
+    <div
+      class="card mb-3 w-100"
+      [ngClass]="{ destacada: item.title.includes('Proyecto') }"
+      apphighlight="lavender"
+    >
       <div class="row g-0 align-items-center">
         <div class="col-md-4">
           <img
@@ -27,7 +32,10 @@
       <div class="row g-0 align-items-center">
         <div class="col-md-6 d-flex justify-content-center align-items-center">
           <div class="card-body text-center">
-            <h3 class="card-title">¡SÍGUENOS <br> EN INSTAGRAM!</h3>
+            <h3 class="card-title">
+              ¡SÍGUENOS <br />
+              EN INSTAGRAM!
+            </h3>
             <p class="card-text">
               Escanea el código QR y forma parte de nuestras experiencias.
             </p>
@@ -42,5 +50,12 @@
         </div>
       </div>
     </div>
+
+    <h4>Favoritos</h4>
+    <ul>
+      @for (item of favoritos; track $index) {
+      <li>{{ item.title }}</li>
+      }
+    </ul>
   </div>
 </div>

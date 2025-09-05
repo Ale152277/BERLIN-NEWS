@@ -6,5 +6,11 @@
     <h5 class="card-title">{{ nombre() }}</h5>
     <p class="card-text fw-semibold">Votos: {{ votos() }}</p>
     <button class="btn mt-auto w-100" (click)="votar()">VOTAR</button>
+    <span>Votos: {{ votos() }}</span>
+    @if (esGanador()) {
+      <span class="badge bg-success">¡Ganador!</span>
+    } @else if (estaEmpatado()) {
+      <span class="badge bg-warning">¡Empatado!</span>
+    }
   </div>
 </div>
