@@ -41,9 +41,9 @@ export class NewsColumn {
       date: 'Hace 10 minutos'
     },
   ];
-  constructor(private favoritosService: FavoritosService) {}
+  constructor(private favoritos: FavoritosService) { }
 
-  get favoritos() {
-    return this.favoritosService.obtenerFavoritos();
+  get favoritosList() {
+    return this.favoritos.obtenerFavoritos();
   }
 }

@@ -1,21 +1,51 @@
 <div class="news-column">
   <div class="col">
+
+    <!-- FAVORITOS -->
     <div class="header-news-column">
+      <p>Favoritos</p>
+    </div>
+
+    @if (favoritosList.length === 0) {
+    <div class="alert alert-primary">No hay favoritos todavía</div>
+    } @else {
+    <!-- Ese favoritosList es el que sale en news-column con get -->
+    @for (fav of favoritosList; track $index) {
+    <div class="card mb-2">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-4">
+          <img 
+          [src]="fav.image" 
+          class="img-fluid rounded-start" 
+          alt="Imagen favorita" 
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5>{{ fav.title }}</h5>
+            <p>{{ fav.content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+    }
+
+    <!-- ÚLTIMAS NOTICIAS -->
+    <div class="header-news-column mt-4">
       <p>Últimas noticias</p>
     </div>
 
     @for (item of newsColumn; track $index) {
-    <div
-      class="card mb-3 w-100"
+    <div class="card mb-3 w-100" 
       [ngClass]="{ destacada: item.title.includes('Proyecto') }"
-      apphighlight="lavender"
     >
       <div class="row g-0 align-items-center">
         <div class="col-md-4">
-          <img
-            [src]="item.image"
-            class="img-fluid rounded-start"
-            alt="Imagen noticia"
+          <img 
+            [src]="item.image" 
+            class="img-fluid rounded-start" 
+            alt="Imagen noticia" 
           />
         </div>
         <div class="col-md-8">
@@ -28,6 +58,8 @@
       </div>
     </div>
     }
+
+    <!-- INSTAGRAM :) -->
     <div class="card-instagram" style="max-width: 540px">
       <div class="row g-0 align-items-center">
         <div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -42,20 +74,13 @@
           </div>
         </div>
         <div class="col-md-6 text-center">
-          <img
-            src="assets/qr-instagram.png"
-            class="img-fluid p-3"
-            alt="QR Instagram"
+          <img 
+            src="assets/qr-instagram.png" 
+            class="img-fluid p-3" 
+            alt="QR Instagram" 
           />
         </div>
       </div>
     </div>
-
-    <h4>Favoritos</h4>
-    <ul>
-      @for (item of favoritos; track $index) {
-      <li>{{ item.title }}</li>
-      }
-    </ul>
   </div>
 </div>

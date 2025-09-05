@@ -52,7 +52,10 @@ export class Encuesta {
     return empatados.length === 1 ? empatados[0].nombre : null;
   }
 
-  cursoEmpatado() {
+  cursosEmpatados() {
+    const total = this.totalVotos();
+    if (total === 0) return [];
+
     const maxVotos = Math.max(...this.cursos.map((c) => c.votos));
     const empatado = this.cursos.filter((c) => c.votos === maxVotos);
     return empatado.length > 1 ? empatado.map((c) => c.nombre) : [];

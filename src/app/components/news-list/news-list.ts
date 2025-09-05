@@ -25,11 +25,10 @@ export class NewsList {
       image: 'https://i.pinimg.com/736x/72/25/37/722537c9b8ee837148dd36b44b85a41e.jpg'
     },
   ];
-  constructor(private favoritosService: FavoritosService) {}
 
-  agregarAFavoritos(noticia: any) {
-    this.favoritosService.agregarFavorito(noticia);
+  constructor(private favoritos: FavoritosService) { }
+
+  marcarFavorito(item: any) {
+    this.favoritos.agregarFavorito(item);
   }
-
-
 }

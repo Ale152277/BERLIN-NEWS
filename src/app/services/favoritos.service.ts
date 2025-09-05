@@ -1,14 +1,17 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class FavoritosService {
-  favoritos = signal<any[]>([]);
-
-  agregarFavorito(noticia: any) {
-    this.favoritos.update(favs => [...favs, noticia]);
-  }
+  //con any el arreglo recibira elementos de cualquier tipo :D
+  private favoritos: any[] = [];   
 
   obtenerFavoritos() {
-    return this.favoritos();
+    return this.favoritos; //Solo devuelve la lista
+  }
+
+  agregarFavorito(item: any) {
+    if (!this.favoritos.includes(item)) {
+      this.favoritos.push(item); //Aqui es donde se añade uwu
+    }
   }
 }
