@@ -13,7 +13,7 @@ export class Encuesta {
       nombre: 'Soluciones Web',
       votos: 0,
       imagen:
-        'https://static.guiainfantil.com/pictures/videos2/41000/41875-consejos-para-que-los-ninos-pierdan-el-miedo-a-hablar-en-publico.jpg',
+        'https://servicioshosting.com/wp-content/uploads/2024/12/SECCION-SOLUCIONES-WEB-03-1.png',
     },
 
     {
@@ -29,10 +29,10 @@ export class Encuesta {
         'https://www.teslaelectronic.com.pe/wp-content/uploads/2025/05/Brazo-Robot-Avanzado-Arduino-6A.png',
     },
     {
-      nombre: 'MOANSO (con Lourdes)',
+      nombre: 'MOANSO',
       votos: 0,
       imagen:
-        'https://img.freepik.com/vector-premium/nino-aterrorizado-situacion-miedo-miedo-algo_546897-225.jpg',
+        'https://mwebs.com.uy/imagenes/noticias/qu%C3%A9-es-el-desarrollo-incremental-184-chica.jpg',
     },
   ];
 

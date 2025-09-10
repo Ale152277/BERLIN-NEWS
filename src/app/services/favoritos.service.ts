@@ -6,7 +6,7 @@ export class FavoritosService {
   private favoritos: any[] = [];   
 
   obtenerFavoritos() {
-    return this.favoritos; //Solo devuelve la lista
+    return this.favoritos; //Solo devuelve la lista jejeje
   }
 
   agregarFavorito(item: any) {
